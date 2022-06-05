@@ -55,14 +55,14 @@ Compute metrics:
 We can see that the overall result is already decent with our simple model.<br />
 However, we suffer from a large amount of False Negatives due to the data imbalance.<br />
 This is of particular importance in to avoid in medical imaging as missing findings might be fatal.<br />
-Val Accuracy: 0.8457525968551636
-Val Precision: 0.7002096176147461
-Val Recall: 0.5520660877227783
-Confusion Matrix:
+Val Accuracy: 0.8457525968551636 <br/>
+Val Precision: 0.7002096176147461 <br/>
+Val Recall: 0.5520660877227783 <br/>
+Confusion Matrix: <br/>
  tensor([[1936,  143],
-        [ 271,  334]])
-Confusion Matrix 2:
+        [ 271,  334]]) <br/>
+Confusion Matrix 2: <br/>
  tensor([[1725,  354],
-        [ 136,  469]])
+        [ 136,  469]]) <br/>
 
 Final results of classification: <br/> ![alt text](https://github.com/fshnkarimi/Pneumonia-Classification/blob/main/Images/images_3.png?raw=true)
