@@ -1,12 +1,12 @@
 ## Introduction
 In this notebook we will create and train the classifier on the chest x-ray dataset to classify whether an image shows signs of pneumonia or not.<br/>
 
-At first we download the data from kaggle (https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data), by clicking on "Download All" and extract it afterwards.
+At first we download the data from kaggle (https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data)
 
 Dataset:
 Wang X, Peng Y, Lu L, Lu Z, Bagheri M, Summers RM. ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases. IEEE CVPR 2017, http://openaccess.thecvf.com/content_cvpr_2017/papers/Wang_ChestX-ray8_Hospital-Scale_Chest_CVPR_2017_paper.pdf
 
-Some example images from dataset : ![alt text](https://github.com/fshnkarimi/Pneumonia-Classification/blob/main/Images/images_1.png?raw=true)
+Some example images from dataset :<br/> ![alt text](https://github.com/fshnkarimi/Pneumonia-Classification/blob/main/Images/images_1.png?raw=true)
 
 ## Dicom Reading & Effective storage
 
@@ -27,7 +27,7 @@ We use a transformation sequence for Data Augmentation and Normalization:
 * Random Translation (max 5%)
 * Random Scaling (0.9-1.1 of original image size)
 
-Inspect some augmented train images: images_2
+Inspect some augmented train images: <br/> ![alt text](https://github.com/fshnkarimi/Pneumonia-Classification/blob/main/Images/images_2.png?raw=true)
 
 There are 24000 train images and 2684 val images. So, The classes are imbalanced: There are more images without signs of pneumonia than with pneumonia.
 There are multiple ways to deal with imbalanced datasets:
@@ -65,4 +65,4 @@ Confusion Matrix 2:
  tensor([[1725,  354],
         [ 136,  469]])
 
-Final results of classification: images_3
+Final results of classification: <br/> ![alt text](https://github.com/fshnkarimi/Pneumonia-Classification/blob/main/Images/images_3.png?raw=true)
